@@ -4,7 +4,7 @@
  * imports.
  */
 
-var agent = require('supertest').agent
+var agent = require('co-supertest').agent
 var http = require('http')
 
 /*!
@@ -20,7 +20,7 @@ module.exports = server
  * Koa application instance.
  *
  * @return {TestAgent}
- * Supertest agent instance.
+ * co-supertest agent instance.
  */
 
 function server (app) {
